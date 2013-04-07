@@ -1,0 +1,36 @@
+{
+    "name": "mdl",
+        "version": "0.1.0",
+        "description": "MDL Developer toolkit",
+        "main": "lib/init.js",
+        "bugs": {
+            "url": "http://github.com/andrewnicols/mdl/issues"
+        },
+        "author": "Andrew Nicols <andrew@nicols.co.uk>",
+        "scripts": {
+            "test": "echo \"Error: no test specified\" && exit 1"
+        },
+        "license": "BSD",
+        "engines": {
+            "node": ">=0.8.0"
+        },
+        "keywords": {
+            "moodle",
+            "yui"
+        },
+        "bin": {
+            "mdl": "./lib/cli.js"
+        },
+        "preferGlobal": "true",
+        "repository": {
+            "type":"git",
+            "url":"https://github.com/andrewnicols/yuidoc.git"
+        },
+        "dependencies": {
+            "yui": "3.9.1",
+            "graceful-fs": ">=1.1.1",
+            "minimatch": "~0.1.0",
+            "mdl-master": "git+https://github.com/andrewnicols/mdl.git",
+            "mdl-2.5": "git+https://github.com/andrewnicols/mdl.git#MOODLE_25_STABLE"
+        }
+}
