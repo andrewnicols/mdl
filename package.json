@@ -30,7 +30,6 @@
             "yui": "3.9.1",
             "graceful-fs": ">=1.1.1",
             "minimatch": "~0.1.0",
-            "mdl-master": "git+https://github.com/andrewnicols/mdl.git",
-            "mdl-2.5": "git+https://github.com/andrewnicols/mdl.git#MOODLE_25_STABLE"
+            "mdl-master": "git+https://github.com/andrewnicols/mdl-sub.git"
         }
 }
