@@ -24,7 +24,7 @@
         "preferGlobal": "true",
         "repository": {
             "type":"git",
-            "url":"https://github.com/andrewnicols/yuidoc.git"
+            "url":"https://github.com/andrewnicols/mdl.git"
         },
         "dependencies": {
             "yui": "3.9.1",
