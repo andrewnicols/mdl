@@ -5,6 +5,9 @@ Moodle Assister (mdl) is a convenience tool to aid moodle development. It
 allows use of different versions of JavaScript tools used in the different
 versions of Moodle.
 
+Current Build Status
+--------------------
+[![Build Status](https://secure.travis-ci.org/andrewnicols/mdl.png?branch=master)](http://travis-ci.org/andrewnicols/mdl)
 
 What's it for?
 --------------
