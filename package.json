@@ -1,6 +1,6 @@
 {
     "name": "mdl",
-        "version": "0.1.0",
+        "version": "0.1.1",
         "description": "MDL Developer toolkit",
         "main": "lib/init.js",
         "bugs": {
@@ -30,6 +30,6 @@
             "yui": "3.9.1",
             "graceful-fs": ">=1.1.1",
             "minimatch": "~0.1.0",
-            "mdl-master": "git+https://github.com/andrewnicols/mdl-sub.git"
+            "mdl-master": "git+https://github.com/andrewnicols/mdl-sub.git#master"
         }
 }
