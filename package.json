@@ -1,6 +1,6 @@
 {
     "name": "mdl",
-        "version": "0.1.1",
+        "version": "0.1.2",
         "description": "MDL Developer toolkit",
         "main": "lib/init.js",
         "bugs": {
