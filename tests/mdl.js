@@ -6,7 +6,7 @@ var YUITest = require('yuitest'),
 
 var suite = new YUITest.TestSuite('MDL test suite');
 suite.add(new YUITest.TestCase({
-    name: 'Base Options',
+    name: 'run',
     _should: {
     },
     'test: child executes': function() {
@@ -18,6 +18,31 @@ suite.add(new YUITest.TestCase({
         options = Y.Project.init([
             '--forcebranch',
             'master'
+        ]);
+        child = (new Y.MDL(options)).run();
+        child.on('exit', function(code) {
+            Assert.isTrue(true);
+            test.resume();
+        });
+
+        this.wait();
+    },
+    test_help: function() {
+        process.chdir(path.join(__dirname, 'testdata', 'moodle_25'));
+        var options,
+            child,
+            test = this,
+            help_show = Y.help.show;
+
+        Y.help.show = function() {
+            Y.help.show = help_show;
+            Assert.isTrue(true, 'Help was not called correctly');
+        };
+
+        options = Y.Project.init([
+            '--forcebranch',
+            'master',
+            '--help'
         ]);
         child = (new Y.MDL(options)).run();
         child.on('exit', function(code) {
