@@ -8,7 +8,7 @@
         },
         "author": "Andrew Nicols <andrew@nicols.co.uk>",
         "scripts": {
-            "test": "istanbul cover --print=both --yui ytestrunner -- --include ./tests/options.js --include ./tests/mdl.js --include ./tests/project.js"
+            "test": "istanbul cover --print=both --yui ytestrunner -- --include ./tests/options.js --include ./tests/mdl.js --include ./tests/project.js --include ./tests/help.js --include ./tests/files.js"
         },
         "license": "BSD",
         "engines": {
