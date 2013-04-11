@@ -23,6 +23,37 @@ version A and version B and this leads to differences in the built code, we
 need to ensure that we continue building the same code for all versions of
 Moodle which were previously built using tool version A.
 
+How do I use it?
+----------------
+
+Currently it only support shifter. I hope to have support for less/recess
+shortly, yuidoc, and jshint.
+
+One of the feautres of mdl is that it will attempt to select the correct
+version of the relevant tools for each version of Moodle. It does so by
+reading the version.php file and attempting to work out which version to
+run with.
+
+You can also force a specific version of the tools using the --forcebranch
+option. For example:
+
+    mdl --forcebranch 25
+
+### Shifter
+
+#### Basic Incantation
+
+    mdl -s
+
+This will work out your current location and run the appropriate actions:
+
+* if you are in a src directory, it will run `shifter --walk`;
+* if you are in a subdirectory of a src directory, it will run `shifter`; and
+* if you are in any other directory, it will run `shifter --walk --recursive`.
+
+It additionally supports the `-v` option as a shortcut to --lint-stderr
+You can additionally pass it any existing shifter options
+
 
 How does that work?
 -------------------
